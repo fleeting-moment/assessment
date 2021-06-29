@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>あなたのいいところ診断</title>
+  <link rel="stylesheet" href="assessment.css">
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+  <!--利用者が直接触れる部分のこと：ユーザーインタフェース(UI)-->
+  <div class="container">
+    <p class="bound">
+      <span>あなたのいいところ診断</span>
+    </p>
+  </div>
+  <p>診断したい名前を入れてください</p>
+  <input type="text" id="user-name" size="40" maxlength="20">
+  <button id="assessment">診断する🐝</button>
+  <!-- <div class="swing">
+    <img class="cute1 animation" src="https://www.sozailab.jp/db_img/sozai/57584/31da240700cd0d75d91ae5dd5a48146e.jpg" alt="">
+    <img class="cute2 animation" src="https://www.sozailab.jp/db_img/sozai/57584/31da240700cd0d75d91ae5dd5a48146e.jpg" alt="">
+    <img class="cute3 animation" src="https://www.sozailab.jp/db_img/sozai/57584/31da240700cd0d75d91ae5dd5a48146e.jpg" alt="">
+  </div> -->
+  <!-- <img class="animation-bird" src="https://lh3.googleusercontent.com/proxy/UASBtQXQu8UjpSrjgDzDsLYeEkK_cjbAfVk3pGp6q3wHUPzBTaIrFrx6lBrfi3YmZyxi6rEbYeTPufFZxHfp6m5l3A" alt=""> -->
+  <div id="result-area"></div>
+  <div id="tweet-area"></div>
+  <script>
+    $(function(){
+      $('#assessment').on('click', () => {
+        $('.cute1').hide(2000);
+      });
+      $('#assessment').on('click', () => {
+        $('.cute2').hide(2500);
+      });
+      $('#assessment').on('click', () => {
+        $('.cute3').hide(3000);
+      });
+    });
+
+  </script>
+  <script src="assessment.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
