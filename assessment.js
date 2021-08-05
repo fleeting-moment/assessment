@@ -10,7 +10,7 @@ const tweetDivided = document.getElementById('tweet-area');
  */
 function removeAllChildren(element) {
   while (element.firstChild) {
-    // 子どもの要素があるかぎり除去
+    // 子どもの要素があるかぎり消去
     element.removeChild(element.firstChild);
   }
 }
